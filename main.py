@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # --- 設定部分 ---
 # ※ ユーザー名とプロジェクトIDは君のものに書き換えてね！
-USERNAME = "colorfuldango" 
-PROJECT_ID = "1350190285"  # 君のScratchのプロジェクトID（数字）に変えてね
+USERNAME = "colorfuldango-Scratch" 
+PROJECT_ID = "123456789"  # 君のScratchのプロジェクトID（数字）に変えてね
 
 # Renderの環境変数からセッションIDを読み込む
 SESSION_ID = os.environ.get("SCRATCH_SESSION_ID")
@@ -25,8 +25,8 @@ def run_flask():
 if SESSION_ID:
     try:
         print("🚀 scratchattach を起動中...")
-        # 最新版の scratchattach に合わせた正しい書き方
-        session = scratch3.Session(session_id=SESSION_ID, username=USERNAME)
+        # 現在の環境に合わせた正しい書き方（session_id= は付けない）
+        session = scratch3.Session(SESSION_ID, username=USERNAME)
         conn = session.connect_cloud(project_id=PROJECT_ID)
         
         # 例: クラウド変数「test」に「1」を書き込む（動作テスト用）
