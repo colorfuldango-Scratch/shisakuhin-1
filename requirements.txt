@@ -2,3 +2,4 @@ scratchattach
 pillow==10.4.0
 requests
 flask
+gradio_client
