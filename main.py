@@ -21,9 +21,9 @@ Thread(target=run_flask, daemon=True).start()
 # ==========================================
 # ⚡ 2. 本命の scratchattach アタッチ呼び出し
 # ==========================================
-PROJECT_ID = "YOUR_PROJECT_ID"
+PROJECT_ID = "1350190285"
 SESSION_ID = os.environ.get("SCRATCH_SESSION_ID", "YOUR_SESSION_ID")
-USERNAME = "YOUR_USERNAME"
+USERNAME = "colorfuldango"
 
 print("🚀 scratchattach を起動中...")
 
