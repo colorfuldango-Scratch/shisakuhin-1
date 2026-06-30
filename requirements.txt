@@ -1,4 +1,4 @@
-scratchattach==1.9.7
+scratchattach
 requests==2.31.0
 pillow==10.2.0
 Flask==3.0.2
